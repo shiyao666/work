@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"> </script>
+    <style>
+        @font-face {
+            font-family: icon;
+            src: url(../mate/csi.woff),
+            url(../mate/csi2.woff);
+
+        }
+
+        .logo1 {
+            font-family: icon;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        .logo2 {
+            font-family: icon;
+            width: 1rem;
+            height: 1rem;
+        }
+
+        .logo1::before {
+            /* 16进制 */
+            content: "\2214";
+
+        }
+
+        .logo2::before {
+            content: "\2600";
+        }
+
+        * {
+            font-style: initial;
+        }
+
+        input {
+            display: inline-block;
+            height: 50px;
+            width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <label>输入框查询</label>
+    <input type="text" id="selects" value="" />
+    <div id="logo">输出符号</div>
+
+</body>
+
+</html>
