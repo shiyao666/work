@@ -1,0 +1,631 @@
+/* reset */
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0} 
+body{font:12px"宋体","Arial Narrow",HELVETICA;background:#fff;-webkit-text-size-adjust:100%;} 
+a{color:#2d374b;text-decoration:none} 
+a:hover{color:#cd0200;text-decoration:underline} 
+em{font-style:normal} 
+li{list-style:none} 
+img{border:0;vertical-align:middle} 
+table{border-collapse:collapse;border-spacing:0} 
+p{word-wrap:break-word}
+@font-face{
+    font-family: icon;
+    src: url(../css/font/csi.woff);
+}
+/* 首页 样式 */
+/*  头部样式 nav部分 */
+
+ /* nav 顶部图片  */
+    .a1001_topimg{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    z-index: -1;
+    }
+    /* nav 顶部标题 */
+    .a1001_top_title{float: right;}
+    /* nav右上角标题 */
+    .a1001_top_title a{
+        float: left;
+        color: white;
+        font-size: 18px;
+        width: 110px;
+        text-align: center;
+        height: 50px;
+        line-height: 50px;
+        text-decoration: none;
+    }
+
+    .a1001_top_title li:hover{
+        border-bottom: 2px solid #fff;
+    }
+    /* nav 最大logo 模块 */
+    .a1001big_logo{
+        display: block;
+        height: 130px;    }
+        /* nav logo */
+    .a1001big_logo img{
+        float: left;
+    }
+    /* nav logo右侧文字 以及English */
+    .a1001big_logo span{
+        float: left;
+        color: #fff;
+        font-family: "黑体";
+        padding-left: 20px;
+    }
+    .a1001_bigtitle{
+        display: block;
+        height: 126px;
+        padding-top: 30px;
+        
+    }
+   .a1001_logotitle{
+        font-size: 36px;
+        letter-spacing: 2px;
+    }
+    .a1001_logoenglish{
+        font-size: 18px;
+    }
+    .a1001_search{
+        padding-right: 80px;
+    }
+    .a1001_searchdiv{
+        float: right;
+    }
+    .a1001_searchdiv input,a {
+        float: left;
+        line-height: 30px;
+       
+    }
+    .a1001_search input{
+        display: block;
+        
+        width: 340px;
+        height: 30px;
+        border-radius: 8px;
+        outline: none;
+        padding-left: 50px; 
+        font-size: 18px;
+    }
+    .a1001_searchdiv a{
+       color: #fff;
+        font-size: 20px;
+       padding-left: 10px;
+       text-decoration: none;
+    }
+    .a1001_searchdiv{
+        position: relative;
+    }
+    .a1001_searchdiv::before{
+     font-family: icon;
+     content: "\e002";
+     font-size: 20px;  
+     color: #ccc;
+     position: absolute;
+     top: 4px;
+     left: 10px;
+    }
+    
+
+
+    .a1002_hr{
+        margin-top: 60px;
+        width: 100%;
+        size: 3px;
+        background: #333;
+        box-shadow:  0px 0px 1px 1px  rgba(0, 0, 0, 0.3);
+    }
+    .a1002_box{
+        border: 1px solid #929293;
+        font:20px "黑体";
+        height: 330px;
+    }
+    .a1002_th{
+        display: block;
+        width: 260px;
+        height: 70px;
+        padding-top: 34px;
+        border-bottom: 1px solid #929293;
+    }
+    .a1002_th span{
+        display: block;
+        width: 90px;
+        height: 36px;
+        padding-bottom: 6px;
+        border-bottom: 3px solid #0071bc;
+        letter-spacing: 2px;
+        font-weight: normal;
+    }
+    .a1002_tr1,.a1002_tr2,.a1002_tr3{
+        display: block;
+        height: 50px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .a1002_box input{
+        display: block;
+        width: 260px;
+        font-size: 16px;
+        height: 36px;
+        padding-left: 40px;
+        letter-spacing: 1px;
+        outline: none;    
+    }
+    .a1002_tr1, .a1002_tr2, .a1002_tr3{
+        position: relative;
+    }
+    .a1002_tr1::before{
+        font-family: icon;
+        font-size: 16px;
+        content: "\e003";
+        position: absolute;
+        left: 12px;
+        top: 20px;
+        color: #929293;
+    }
+    .a1002_tr2::before{
+        font-family: icon;
+        font-size: 18px;
+        content: "\e005";
+        position: absolute;
+        left: 12px;
+        top: 18px;
+        color: #929293;
+    }
+    .a1002_tr3::before{
+        font-family: icon;
+        font-size: 18px;
+        content: "\e011";
+        position: absolute;
+        left: 11px;
+        top: 18px;
+        color: #929293;
+    }
+    .a1002_tr3 input{
+        width: 160px;
+
+    }
+    .a1002_tr4{
+        height: 60px;
+    
+    }
+    .a1002_tr4 input{
+        padding-left: 0;
+        text-align: center;
+        color: #fff;
+        
+        background: #0071bc;
+    }
+    .a1002_tr5 input{
+        display: block;
+        width: 20px;
+        height: 20px;
+        background: #fff;
+        float: left;
+    }
+    .a1002_tr5 span{
+        color: #929293;
+        font-size: 16px;
+        float: left;
+        padding-left: 10px;
+        height: 30px;
+        line-height: 26px;
+    }
+    .a1002_userinfo{
+        float: right;
+    }
+    .a1002_password{
+        color: #929293;
+        font-size: 16px;
+        float: left;
+        padding-left: 10px;
+        height: 30px;
+        line-height: 26px;
+        text-decoration: none;
+    }
+    .a1002_target{
+        color: #0071bc;
+        font-size: 16px;
+        float: left;
+        padding-left: 10px;
+        height: 30px;
+        line-height: 26px;
+        text-decoration: none;
+    }
+    .a1002_h2{
+        padding-top: 4px;
+        position: relative;
+        padding-left: 40px;
+        font:24px "黑体";
+        padding-bottom: 40px;
+    }
+    .a1002_h2::before{
+        font-family: icon;
+        font-size: 30px;
+        content: "\e007";
+        color: #0071bc;
+        position: absolute;
+        left: 14px;
+        top: 2px;
+    }
+    
+    .a1002_h2::after{
+        font-family: icon;
+        font-size: 60px;
+        content: "\e009";
+        color: #0071bc;
+        float: left;
+        position: absolute;
+        top: -6px;
+        left: 0;
+        }
+    .a1001_topright{
+        padding-left: 50px;
+     
+    }
+    .a1002_table{
+        display: block;
+        height: 60px;
+        padding-left: 20px;
+    }
+    .a1002_table a{
+        display: block;
+        width: 140px;
+        height: 40px;
+        text-align: center;
+        border: 1px solid #2d374b;
+        font: 18px "黑体";
+        line-height: 40px;
+        text-decoration: none;
+    }
+    .a1002_1a::before{
+        font-family: icon;
+        font-size: 24px;
+        color: #fff;
+        content: "\e001";
+        position: absolute;
+        left: 20px;
+    }
+    .a1002_2a::before{
+        font-family: icon;
+        font-size: 24px;
+        color: #fff;
+        content: "\e006";
+        position: absolute;
+        left: 24px;
+    }
+    .a1002_3a::before{
+        font-family: icon;
+        font-size: 24px;
+        color: #fff;
+        content: "\e012";
+        position: absolute;
+        left: 24px;
+    }
+
+    .a1002_midtitle{
+        padding-bottom: 10px;
+        border-bottom: 2px solid #0071bc;
+        font: 24px "黑体";
+    }
+    .a1002_center,.a1002_rightcenter{
+        padding-left: 40px;
+    }
+    .a1002_rightcenter{
+        padding-top: 40px;
+    }
+    /* 三角样式 */
+    .a1002_spantri{
+        display: block;
+        height: 50px;
+        font: 16px "黑体";
+        padding-top: 13px;
+        position: relative;
+        padding-bottom: 10px;
+      
+        border-bottom: 1px solid #929293;
+    }
+    /* 三角before */
+    .a1002_spantri::before{
+        font-family: icon;
+        color: #0071bc;
+        content: "\e010";
+        font-size: 18px;
+        position: absolute;
+        left: -24px;
+        top: 12px;
+    }
+    .a1003_bottomp{
+        float: left;
+        padding-left: 50px;
+        padding-top: 20px;
+        width: 780px;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 优选课程 */
+.a1002_enlish{
+    padding-top: 80px;
+}
+.a1002_centerleft{
+    float: left;
+ 
+   width: 300px;
+
+}
+.a1002_centerrigiht{
+    float: left;
+    width: 860px;
+    padding-left: 40px;
+}
+.a1002_centerrigiht h2{
+    float: left;
+    width: 100%;
+   
+}
+.a1003_div6{
+    padding-left: 30px;
+}
+.a1003_6div{
+    float: left;
+    height: 240px;
+    text-decoration: none;
+}
+.a1003_6div:hover{
+    text-decoration: none;
+}
+.a1003_imgon{
+    display: block;
+    
+    width: 250px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.a1003_imgon img{
+    display: block;
+    width: 240px;
+}
+.a1003_span1{
+    display: block;
+    width: 230px;
+    color: #0071bc;
+    font: 20px "微软雅黑";
+    letter-spacing: 2px;
+    padding: 10px 20px 2px 5px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.a1003_span2{
+    float: left;
+    width: 150px;
+    padding-left: 5px;
+    padding-right: 50px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.a1003_span3{
+    float: left;
+    width: 60px;
+    padding-right: 20px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
+
+
+/* 技术文章 */
+.a1003_imgp{
+    display: block;
+    width: 860px;
+    padding-top: 40px;
+}
+.a1003_bottomimg {
+    display: block;
+    width: 260px;
+    float: left;
+    padding-top: 6px;
+}
+.a1003_bottomimg img{
+    display: block;
+    width: 240px;
+    float: left;
+}
+.a1003_bottomh3{
+  padding-bottom: 8px;
+  font: 20px "Microsoft YaHei";
+  color: #0071bc;
+}
+.a1003_imgp h3,.a1003_imgp p{
+    float: left;
+    width: 480px;
+    padding-left: 10px;
+}
+.a1003_imgp p{
+    letter-spacing: 2px;
+    line-height: 1.5rem;
+    font: 14px "Microsoft YaHei";
+}
+.a1003_lastbottom{
+    display: block;
+    
+    padding-left: 30px;
+}
+
+.a1002_a3 a{
+    display: block;
+    width: 260px;
+    height: 40px;
+    padding-left: 50px;
+    color: #fff;
+    background: #0071bc;
+    font-size: 20px;
+    line-height: 40px;
+    margin-bottom: 20px;
+    text-decoration: none;
+}
+.a1003_leftbottom{
+    padding: 40px 15px 60px 15px;
+    background: #ccc;
+    
+}
+.a1003_leftbottom{
+    float: left;
+    width: 300px;
+}
+.a1003_leftbottom img{
+    padding-left: 10px;
+    display: block;
+    width: 260px;
+    margin-top: 20px;
+}
+.a1003_actimg1{
+    position: relative;
+
+}
+.a1003_actimg1::before{
+    content: "曲维枝常务副会长赴江苏和湖北调研";
+    display: block;
+    width: 250px;
+    height: 30px;
+    line-height: 30px;
+    background: #000;
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+    left: 10px;
+    opacity: 0.5;
+    color: #fff;
+    text-align: center;
+
+}   
+/* 左下侧 5段实时新闻 */
+.a1003_p5{
+    display: block;
+    height: 90px;
+    padding: 20px 15px 50px 30px;
+}
+.a1003_p5 span,.a1003_p5 p{
+    width: 250px;
+    float: left;
+    font:14px  "微软雅黑";
+    line-height: 2rem;
+}
+.a1003_p5 span{
+    position: relative;
+}
+.a1003_p5 span::before{
+    font-family: icon;
+    color: #0071bc;
+    content: "\e010";
+    font-size: 18px;
+    position: absolute;
+    left: -26px;
+}
+.a1003_p51{
+    height: 110px;
+    color: #0071bc;
+}
+.a1003_about{
+    float: left;
+}
+.a1003_about{
+    padding-top: 80px;
+    padding-left: 6px;
+}
+.a1003_about span{
+    float: left;
+    margin-left: 44px;
+    border: 0;
+}
+.a1004_bottom{
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    background: #ccc;
+    bottom: 0;
+}
+.container-fluid{
+    background: #ccc;
+    margin-top: 80px;
+}
+.a1004_link{
+    padding-left: 130px;
+}
+.a1004_link a{
+    display: block;
+    width: 50%;
+    height: 24px;
+    font: 14px "Microsoft YaHei";
+    text-decoration: none;
+ 
+}
+.a1004_link h3{
+    padding-top: 16px;
+    display: block;
+    padding-bottom: 20px;
+    width: 100%;
+    float: left;
+    font: 20px "Microsoft YaHei";
+}
+.a1004_link2{
+   padding-top: 16px;
+}
+.a1004_lastright,.a1004_lastright2{
+    float: left;
+    height: 44px;
+    border: 1px solid #0071bc;
+    border-radius: 8px;
+    text-align: center;
+    font: 24px "Microsoft YaHei";
+    line-height: 44px;
+    text-decoration: none;
+}
+.a1004_link2 div{
+    float: left;
+    width: 100%;
+    padding-bottom: 20px;
+}
+.a1004_lastright{
+    width: 127px;
+}
+.a1004_lastright2{
+    width: 273px;
+}
+.a1004_lastright:hover{
+    text-decoration: none;
+}
+.a1004_lastright2:hover{
+    text-decoration: none;
+}
+.a1004_bottomp{
+    float: left;
+    padding-top: 50px;
+    font: 14px "Microsoft YaHei";
+    line-height: 2rem;
+}
+
+
